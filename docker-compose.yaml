@@ -23,17 +23,17 @@ services:
     depends_on:
     - catalogue
 
-  redis:
-    image: redis
+  # redis:
+  #   image: redis
 
-  user:
-    image: user:1
-    depends_on: 
-    - redis
-    - mongodb
+  # user:
+  #   image: user:1
+  #   depends_on: 
+  #   - redis
+  #   - mongodb
 
-  cart:
-    image: cart:1
-    depends_on: 
-    - redis
-    - catalogue
+  # cart:
+  #   image: cart:1
+  #   depends_on: 
+  #   - redis
+  #   - catalogue
