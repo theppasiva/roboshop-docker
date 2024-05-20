@@ -81,6 +81,10 @@ services:
     environment:
     - RABBITMQ_DEFAULT_USER=roboshop
     - RABBITMQ_DEFAULT_PASS=roboshopv123
+    volumes:
+      - source: rabbitmq
+        target: /var/lib/rabbitmq
+        type: volume
 
   payment:
     image: payment:v1
